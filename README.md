@@ -2,7 +2,7 @@
 
 > A short curated list of awesome 'TIL-today-I-learned' resources related to Data Engineering. 
 
-Among these, I can vouch for and have experiences in [Kafka](https://kafka.apache.org/), [Thrift](https://thrift.apache.org/), [Ent](https://entgo.io/docs/getting-started), [MySql][https://www.mysql.com/], [Presto](https://prestodb.github.io/docs/current/index.html), [Spark](https://spark.apache.org/), [Postgres](https://www.postgresql.org/), [Mongo](https://www.mongodb.comhttps://www.mongodb.com), [Prometheus](https://github.com/prometheus/prometheus), [Grafana](https://github.com/grafana/grafana), [Elastic](https://www.elastic.co/) among others including the humble [MS Excel](https://appdevelopermagazine.com/copilot-in-excel-with-python-announced-by-microsoft/) now supported by MS365 Copilot.
+Among these, I can vouch for and have experiences in [Kafka](https://kafka.apache.org/), [Thrift](https://thrift.apache.org/), [Ent](https://entgo.io/docs/getting-started), [MySql](https://www.mysql.com/), [Presto](https://prestodb.github.io/docs/current/index.html), [Spark](https://spark.apache.org/), [Postgres](https://www.postgresql.org/), [Mongo](https://www.mongodb.comhttps://www.mongodb.com), [Prometheus](https://github.com/prometheus/prometheus), [Grafana](https://github.com/grafana/grafana), [Elastic](https://www.elastic.co/) among others including the humble [MS Excel](https://appdevelopermagazine.com/copilot-in-excel-with-python-announced-by-microsoft/) now supported by MS365 Copilot.
 
 ## Contents
 
