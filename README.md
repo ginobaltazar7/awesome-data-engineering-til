@@ -23,9 +23,9 @@ Among these, I can vouch for and have experiences in [Kafka](https://kafka.apach
   - [Data Dumps](#data-dumps)
 - [Monitoring](#monitoring)
   - [Prometheus](#prometheus)
-- [Profiling](#profiling)
-  - [Data Profiler](#data-profiler)
+- [Data Profiler](#data-profiler)
 - [Testing](#testing)
+- [Org-specific](#org-specific)
 - [Community](#community)
   - [Forums](#forums)
   - [Conferences](#conferences)
@@ -154,23 +154,6 @@ multi-processor, multi-core machines
 * [SequenceFile](https://wiki.apache.org/hadoop/SequenceFile) SequenceFile is a flat file consisting of binary key/value pairs. It is extensively used in MapReduce as input/output formats
 * [Kryo](https://github.com/EsotericSoftware/kryo) Kryo is a fast and efficient object graph serialization framework for Java
 
-# Streaming
-
-* [Apache Beam](https://beam.apache.org/) Apache Beam is a unified programming model that implements both batch and streaming data processing jobs that run on many execution engines.
-* [Spark Streaming](https://spark.apache.org/streaming/) Spark Streaming makes it easy to build scalable fault-tolerant streaming applications.
-* [Apache Flink](https://flink.apache.org/) Apache Flink is a streaming dataflow engine that provides data distribution, communication, and fault tolerance for distributed computations over data streams.
-* [Apache Storm](https://storm.apache.org) Apache Storm is a free and open source distributed realtime computation system
-* [Apache Samza](https://samza.apache.org) Apache Samza is a distributed stream processing framework
-* [Apache NiFi](https://nifi.apache.org/) is an easy to use, powerful, and reliable system to process and distribute data
-* [Apache Hudi](https://hudi.apache.org/) Apache Hudi is an open source framework for managing storage for real time processing, one of the most interesting feature is the Upsert
-* [VoltDB](https://voltdb.com/) VoltDb is an ACID-compliant RDBMS which uses a [shared nothing architecture](https://en.wikipedia.org/wiki/Shared-nothing_architecture).
-* [PipelineDB](https://github.com/pipelinedb/pipelinedb) The Streaming SQL Database
-* [Spring Cloud Dataflow](https://cloud.spring.io/spring-cloud-dataflow/) Streaming and tasks execution between Spring Boot apps
-* [Bonobo](https://www.bonobo-project.org/) Bonobo is a data-processing toolkit for python 3.5+
-* [Robinhood's Faust](https://github.com/faust-streaming/faust) Forever scalable event processing & in-memory durable K/V store as a library with asyncio & static typing.
-* [HStreamDB](https://github.com/hstreamdb/hstream) The streaming database built for IoT data storage and real-time processing.
-* [Kuiper](https://github.com/emqx/kuiper) An edge lightweight IoT data analytics/streaming software implemented by Golang, and it can be run at all kinds of resource-constrained edge devices.
-
 # File System
 
 - [HDFS](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html) - A distributed file system designed to run on commodity hardware.
@@ -253,7 +236,7 @@ multi-processor, multi-core machines
 	* [Databricks Notebook Gallery](https://www.databricks.com/discover/notebook-gallery) Sample gallery of databricks notebooks.
 	* [Awesome Databricks Reisdebora](https://github.com/reisdebora/awesome-databricks) Short list of resources around Databricks, including links to learning.
 
-# DataViz Charts and Dashboards
+# Charts and Dashboards
 
 * [Highcharts](https://www.highcharts.com/) A charting library written in pure JavaScript, offering an easy way of adding interactive charts to your web site or web application.
 * [ThoughtSpot](https://github.com/thoughtspot/ts_rest_api_and_tml_tools) Business intelligence analytics search, alternative to Tableau
@@ -365,6 +348,14 @@ multi-processor, multi-core machines
 - [DataKitchen](https://datakitchen.io/) -  Open Source Data Observability for end-to-end Data Journey Observability, data profiling, anomaly detection, and auto-created data quality validation tests.
 - [RunSQL](https://runsql.com/) - Free online SQL playground for MySQL, PostgreSQL, and SQL Server. Create database structures, run queries, and share results instantly.
 
+# Org-specific
+
+* [Meta](https://github.com/orgs/facebook/repositories) - PyTorch, React, RocksDB, Thrift to name a few of myfavorites
+* [Capital One](https://github.com/orgs/capitalone/repositories?type=all) 
+* [Netflix](https://github.com/orgs/Netflix/repositories)
+* [Uber](https://github.com/orgs/uber/repositories?type=all&q=sort%3Astars+machine-learning) 
+* [Google](https://github.com/orgs/google/repositories?q=sort%3Astars&page=2) 
+
 # Community
 
 ### Newsletters & Curated Reads
@@ -376,7 +367,7 @@ multi-processor, multi-core machines
 * [Zach Wilson's Data Engineer Handbook & Comprehensive DE Resources](https://github.com/DataExpert-io/data-engineer-handbook/)
 * [Zach Wilson's Data Engineer Bootcamp](https://bootcamp.techcreator.io/)
 
-### Reddit Forums
+### Forums
 
 - [/r/dataengineering](https://www.reddit.com/r/dataengineering/) - Subreddit news, tips, and background on Data Engineering.
 - [/r/etl](https://www.reddit.com/r/ETL/) - Subreddit focused on ETL.
