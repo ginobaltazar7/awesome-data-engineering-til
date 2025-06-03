@@ -2,7 +2,7 @@
 
 > A short curated list of awesome 'TIL-today-I-learned' resources related to Data Engineering. 
 
-Among these, I can vouch for and have experiences in [Kafka](https://kafka.apache.org/), [Thrift](https://thrift.apache.org/), [Ent](https://entgo.io/docs/getting-started), [MySql](https://www.mysql.com/), [Presto](https://prestodb.github.io/docs/current/index.html), [Spark](https://spark.apache.org/), [Postgres](https://www.postgresql.org/), [Mongo](https://www.mongodb.comhttps://www.mongodb.com), [Prometheus](https://github.com/prometheus/prometheus), [Grafana](https://github.com/grafana/grafana), [Elastic](https://www.elastic.co/) among others including the humble [MS Excel](https://github.com/ginobaltazar7/66daysofdata?tab=readme-ov-file#excel) now supported by MS365 Copilot.
+Among these, I can vouch for and have experiences in [Kafka](https://kafka.apache.org/), [Thrift](https://thrift.apache.org/), [Ent](https://entgo.io/docs/getting-started), [MySql](https://www.mysql.com/), [Presto](https://prestodb.github.io/docs/current/index.html), [Spark](https://spark.apache.org/), [Postgres](https://www.postgresql.org/), [Mongo](https://www.mongodb.comhttps://www.mongodb.com), [Prometheus](https://github.com/prometheus/prometheus), [Grafana](https://github.com/grafana/grafana), [Elastic](https://www.elastic.co/) and last but not least, the humble [MS Excel](https://github.com/ginobaltazar7/66daysofdata?tab=readme-ov-file#excel) now supported by MS365 Copilot.
 
 ## Contents
 
@@ -336,13 +336,17 @@ multi-processor, multi-core machines
 - [DataKitchen](https://datakitchen.io/) -  Open Source Data Observability for end-to-end Data Journey Observability, data profiling, anomaly detection, and auto-created data quality validation tests.
 - [RunSQL](https://runsql.com/) - Free online SQL playground for MySQL, PostgreSQL, and SQL Server. Create database structures, run queries, and share results instantly.
 
-# Org-specific
+# BigTech Company Repos
 
-* [Meta](https://github.com/orgs/facebook/repositories) - PyTorch, React, RocksDB, Thrift to name a few of myfavorites
+* [Amazon](https://github.com/aws) and [AWS blog](https://aws.amazon.com/blogs/big-data/)
 * [Capital One](https://github.com/orgs/capitalone/repositories?type=all) 
-* [Netflix](https://github.com/orgs/Netflix/repositories)
-* [Uber](https://github.com/orgs/uber/repositories?type=all&q=sort%3Astars+machine-learning) 
-* [Google](https://github.com/orgs/google/repositories?q=sort%3Astars&page=2) 
+* [Databricks](https://github.com/databricks) and [blog](https://www.databricks.com/blog/category/engineering/data-engineering)
+* [Google](https://github.com/orgs/google/repositories?q=sort%3Astars&page=2) and [blog](https://tinyurl.com/573fymeh)
+* [Meta](https://github.com/orgs/facebook/repositories) - PyTorch, React, RocksDB, Thrift, Ent and [blog](https://engineering.fb.com/category/data-infrastructure/)
+* [Microsoft](https://github.com/microsoft) and [blog](https://techcommunity.microsoft.com/t5/data-architecture-blog/bg-p/DataArchitectureBlog)
+* [Netflix](https://github.com/orgs/Netflix/repositories) and [blog](https://netflixtechblog.com/tagged/big-data)
+* [Uber](https://github.com/orgs/uber/repositories?type=all&q=sort%3Astars+machine-learning) and [blog](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
+
 
 # Community
 
@@ -351,9 +355,7 @@ multi-processor, multi-core machines
 * [Ananth Packkildurai's Data Engineering Weeklies](https://substack.com/profile/3520227-ananth-packkildurai)
 * [Amplify Partner's Building Data Driven Orgs](https://amplifypartners.com/moderndatateamshub/)
 * [Joe Reis Substack](https://joereis.substack.com/)
-* [Zach Wilson's Data Engineer Newsletter](https://blog.dataengineer.io/)
-* [Zach Wilson's Data Engineer Handbook & Comprehensive DE Resources](https://github.com/DataExpert-io/data-engineer-handbook/)
-* [Zach Wilson's Data Engineer Bootcamp](https://bootcamp.techcreator.io/)
+* [Zach Wilson's DE Handbook](https://github.com/DataExpert-io/data-engineer-handbook/) and [bootcamps](https://bootcamp.techcreator.io/)
 
 ### Forums
 
@@ -368,18 +370,21 @@ multi-processor, multi-core machines
 
 ### Podcasts
 
-- [Data Engineering Podcast](https://www.dataengineeringpodcast.com/) - The show about modern data infrastructure.
-- [The Data Stack Show](https://datastackshow.com/) - A show where they talk to data engineers, analysts, and data scientists about their experience around building and maintaining data infrastructure, delivering data and data products, and driving better outcomes across their businesses with data.
+- [Data Engineering Podcast](https://www.dataengineeringpodcast.com/) - discussions on modern data stack and infrastructure.
+- [The Data Stack Show](https://datastackshow.com/) - engineers share their experiences around building and maintaining data infrastructure, data products, and partnering with business.
 
 ### Books
 
 - [Snowflake Data Engineering](https://www.manning.com/books/snowflake-data-engineering) - A practical introduction to data engineering on the Snowflake cloud data platform.
+
 - [Best Data Science Books](https://www.appliedaicourse.com/blog/data-science-books/) - This blog offers a curated list of top data science books, categorized by topics and learning stages, to aid readers in building foundational knowledge and staying updated with industry trends.
 
 ### Trivia
+
 * [MySql founder Monty's blog](http://monty-says.blogspot.com/2020/) 
 
 ### Conferences
+
 * [Data Council](https://www.datacouncil.ai/about) Data Council is the first technical conference that bridges the gap between data scientists, data engineers and data analysts.
 
 ## Credit
