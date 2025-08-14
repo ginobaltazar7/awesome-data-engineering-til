@@ -382,6 +382,8 @@ multi-processor, multi-core machines
 
 - [Best Data Science Books](https://www.appliedaicourse.com/blog/data-science-books/) - This blog offers a curated list of top data science books, categorized by topics and learning stages, to aid readers in building foundational knowledge and staying updated with industry trends.
 
+- [Architecting an Apache Iceberg Lakehouse](https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse) - A guide to designing an Apache Iceberg lakehouse from scratch.
+
 ### Trivia
 
 * [MySql founder Monty's blog](http://monty-says.blogspot.com/2020/) 
