@@ -1,6 +1,8 @@
 # Awesome Data Engineering TIL [![Awesome](https://awesome.re/badge-flat2.svg)](https://github.com/sindresorhus/awesome)
 
-> A short curated list of awesome 'TIL-today-I-learned' resources related to Data Engineering. See this new video on [Claude Code for Data Engineering](https://www.ginobaltazar.com/downloads/claude_for_data_engineering.mp4) and ! Last updated: [August 12, 2026](https://github.com/ginobaltazar7/awesome-data-engineering-til/commits/main/?since=2026-08-12).
+> A short curated list of awesome 'TIL-today-I-learned' resources related to Data Engineering. See this new video on [Claude Code for Data Engineering](https://www.ginobaltazar.com/downloads/claude_for_data_engineering.mp4)! 
+
+Last updated: [August 12, 2026](https://github.com/ginobaltazar7/awesome-data-engineering-til/commits/main/?since=2026-08-12).
 
 Among these, I can vouch for and have experiences in [Kafka](https://kafka.apache.org/), [Thrift](https://thrift.apache.org/), [Ent](https://entgo.io/docs/getting-started), [MySql](https://www.mysql.com/), [Presto](https://prestodb.github.io/docs/current/index.html), [Spark](https://spark.apache.org/), [Postgres](https://www.postgresql.org/), [Mongo](https://www.mongodb.comhttps://www.mongodb.com), [Prometheus](https://github.com/prometheus/prometheus), [Grafana](https://github.com/grafana/grafana), [Elastic](https://www.elastic.co/) and last but not least, the humble [MS Excel](https://github.com/ginobaltazar7/66daysofdata?tab=readme-ov-file#excel) now supported by MS365 Copilot.
 
@@ -35,7 +37,13 @@ Among these, I can vouch for and have experiences in [Kafka](https://kafka.apach
   - [Videos](#videos)
 
 # Playbooks
-- [Claude Code for Staff Data Architecture](../main/playbooks/claude-data-engineering-framework.md) — Comprehensive design guide and baseline configurations implementing machine-readable **Data Contracts**, shift-left CI/CD validation, and automated **Amundsen** catalog tracking.
+
+- [Claude Code for Staff Data Architecture](../main/playbooks/claude-data-engineering-framework.md) — See my sample comprehensive design guide and baseline configurations implementing machine-readable **Data Contracts**, shift-left CI/CD validation, and automated **Amundsen** catalog tracking.
+- [Astronomer Agents](https://github.com/astronomer/agents) - AI agent tooling for building, debugging, and triaging Airflow DAGs. Built by the team at [Astronomer](https://www.astronomer.io/).
+- [Data Engineering Agent Skills by Vaquar Khan](vaquarkhan/data-engineering-agent-skills) -  A specialized and comprehensive repository hosting data engineering skill. Via [Vaquar Khan](https://github.com/vaquarkhan)
+- [dbt Agent Skills](https://github.com/dbt-labs/dbt-agent-skills) - curated collection of Agent Skills for dbt platform.
+- [Data Analytics and DE skills by borghei](https://github.com/borghei/Claude-Skills/blob/main/data-analytics/CLAUDE.md) Look under the data-analytics/ folder! Via [Amin Borghei](https://github.com/borghei)
+- [](https://claudeskills.info/skills/rightnow-ai/openfang/data-pipeline/) - standalone production playbook hosted via the Claude Skills Hub directory.I like the focus on common engineering pitfalls—such as running full table scans when incremental loads are feasible, hardcoding credentials, or skipping vital post-ingestion freshness checks. This data-pipeline skill is one of many in the official agent playbook bundled with RightNow-AI/openfang, an open-source autonomous agent framework built in Rust that currently has over [18,000 stars on GitHub](https://github.com/rightnow-ai/openfang).
 
 
 # Databases
