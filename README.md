@@ -63,6 +63,8 @@ Among these, I can vouch for and have experiences in [Kafka](https://kafka.apach
 - Columnar Databases
   - [ClickHouse](https://clickhouse.com) - Fast, open-source columnar analytics.
   - [AWS Redshift](https://amazon.com) - Managed cloud data warehouse.
+  - [Apache Pinot](https://github.com/apache/pinot) - A distributed, real-time OLAP data store designed to deliver low-latency analytical queries on massive streaming datasets.
+
 
 - Document
   - [MongoDB](https://www.mongodb.com) - An open-source, document database designed for ease of development and scaling.
@@ -206,6 +208,11 @@ multi-processor, multi-core machines
     - [PyHive](https://github.com/dropbox/PyHive) - A collection of Python DB-API and SQLAlchemy interfaces for both Hive and Presto/Trino.
   - [Drill](https://drill.apache.org/) - Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage.
 
+- Vectorized Execution
+  - [Velox](https://github.com/facebookincubator/velox) - Meta's modular, composable C++ vectorized execution engine library designed to optimize analytical, batch, and AI/ML system runtimes.
+  - [Apache Gluten](https://github.com/apache/gluten) - An injection middle-layer that offloads JVM-based Apache Spark execution paths to high-performance native engines like Velox using Substrait plans.
+
+
 # Databricks
 
 * [Databricks](https://github.com/databricks) Big data processing platform founded by the creators of Apache Spark.
@@ -230,8 +237,6 @@ multi-processor, multi-core machines
 - [Grafana](https://github.com/grafana/grafana) Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored.
 - [Recharts](https://recharts.github.io/) - composable charting library for React environments.
 - [Apache Echarts](https://echarts.apache.org/en/index.html) - as with Recharts, also for React.
-
-
 
 # Pipeline Orchestration
 
