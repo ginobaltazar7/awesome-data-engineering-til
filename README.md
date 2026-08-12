@@ -384,6 +384,9 @@ multi-processor, multi-core machines
 
 - [Architecting an Apache Iceberg Lakehouse](https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse) - A guide to designing an Apache Iceberg lakehouse from scratch.
 
+### Videos
+- [Anthropic Claude for Data Engineering](https://www.ginobaltazar.com/downloads/claude_for_data_engineering.mp4) - You can offload time-intensive, reactive work to Claude Code. That way, you can focus on higher leverage work like data modeling and pipeline design and use Claude as a more contextualized partner for data engineering,
+
 ### Trivia
 
 * [MySql founder Monty's blog](http://monty-says.blogspot.com/2020/) 
