@@ -34,8 +34,8 @@ Among these, I can vouch for and have experiences in [Kafka](https://kafka.apach
   - [Books](#books)
   - [Videos](#videos)
 
-### Playbooks
-- [Claude Code for Staff Data Architecture](../blob/main/playbooks/claude-data-engineering-framework.md) — Comprehensive design guide and baseline configurations implementing machine-readable **Data Contracts**, shift-left CI/CD validation, and automated **Amundsen** catalog tracking.
+# Playbooks
+- [Claude Code for Staff Data Architecture](../main/playbooks/claude-data-engineering-framework.md) — Comprehensive design guide and baseline configurations implementing machine-readable **Data Contracts**, shift-left CI/CD validation, and automated **Amundsen** catalog tracking.
 
 
 # Databases

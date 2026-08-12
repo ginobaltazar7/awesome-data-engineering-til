@@ -211,8 +211,8 @@ if __name__ == '__main__':
 ## Documentation Resources
 
 *   **Ecosystem Implementations & Benchmarks:** [Anthropic Blog Research Pages](https://claude.com/blog)
-*   **Agent Deployment Best Practices:** [Claude Code Performance Optimization Documentation](https://claude.com/docs/en/best-practices)
-*   **Core Feature Architecture:** [Model Context Protocol & Headless Execution Guides](https://claude.com/docs/en/overview)
+*   **Agent Deployment Best Practices:** [Claude Code Performance Optimization Documentation](https://code.claude.com/docs/en/best-practices)
+*   **Core Feature Architecture:** [Model Context Protocol & Headless Execution Guides](https://code.claude.com/docs/en/overview)
 *   **Enterprise Catalog Integration:** [Amundsen Data Discovery & Metadata Engine](https://github.com/amundsen-io/amundsen)
-*   **Cost Management Structures:** [Budget Controls & Per-Task Expenditure Documentation](https://claude.com/docs/en/costs)
+*   **Cost Management Structures:** [Budget Controls & Per-Task Expenditure Documentation](https://code.claude.com/docs/en/costs)
 
