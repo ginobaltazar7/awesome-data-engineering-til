@@ -1,10 +1,10 @@
-# Maximizing Data Engineering Efficiency with Claude Code
+# Gaining Data Engineering Efficiency with Claude Code
 
-*Frameworks & Strategies • Anthropic Data Science Insights*
+*A Framework & Example Playbook via Claude Code*
 
 ---
 
-## Core Paradigm
+## Motivation
 
 You and your data teams can shift repetitive, reactive troubleshooting and maintenance tasks over to Claude Code. This delegation frees up your data engineers to dedicate their energy to high-value architectural initiatives like **proactive pipeline modeling and structural system design**, utilizing Claude as an embedded, context-aware development partner.
 
@@ -18,7 +18,7 @@ You and your data teams can shift repetitive, reactive troubleshooting and maint
 ### For Data Platform Engineers
 
 1.  **Establish Infrastructure Connectivity:** Initialize a read-only Model Context Protocol (MCP) server connected to your target data warehouse or dbt stack. Establish firm security boundaries immediately using clear allow/deny parameters and strict secret path restrictions.
-2.  **Document a Key Process:** Translate your most common operational procedure—such as incident triaging into a dedicated automation skill, tracking your progress via a concise `CLAUDE.md` playbook under 200 lines.
+2.  **Document a Key Process:** Translate your most common operational procedure, such as incident triaging into a dedicated automation skill, tracking your progress via a concise `CLAUDE.md` playbook.
 3.  **Automate Execution:** Implement a scheduled cron job or CI/CD stage that pipes overnight pipeline health diagnostics directly into team communication channels via commands like `claude -p`.
 
 ### For Data Leaders & Managers
@@ -29,10 +29,10 @@ You and your data teams can shift repetitive, reactive troubleshooting and maint
 
 ---
 
-## Operational Pillars
+## Operational Pillar Considerations
 
 ### 🟢 Infrastructure Integration
-Configure Claude to operate natively alongside your active toolchains via secure, scheduled, and autonomous configurations.
+Configure Claude to operate natively alongside your active tooling via secure, scheduled, and autonomous configurations.
 
 #### Primary Mechanisms:
 *   **MCP Bridges:** Leverage open-standard plugins to connect Claude directly to databases, orchestration fabrics, dbt structures, repositories, dashboards, and shared team tools. When pipeline failures occur, the agent traces data lineage across these boundaries to stage fixed pull requests for engineering review.
@@ -43,7 +43,7 @@ Configure Claude to operate natively alongside your active toolchains via secure
 
 ---
 
-## 🔵 Knowledge Contextualization
+## 🔵 Knowledge Contextualization Considerations
 Provide the agent with explicit documentation regarding your team's unique operational norms, formatting policies, and data definitions.
 
 #### Primary Mechanisms:
@@ -51,15 +51,18 @@ Provide the agent with explicit documentation regarding your team's unique opera
 *   **Persistent Shared Memory (`CLAUDE.md`):** Use repository-level markdown summaries that act as a shared memory center. Every post-mortem lesson is updated here through standard code reviews, ensuring the context applies to all future debugging sessions.
 *   **Semantic Consistency & Testing Frameworks:** Align your data definitions with explicit code guards, validation checks, and metric definitions. The agent cross-references these semantic rules to test its code fixes before submission.
 
-> 📊 **Anthropic Case Study:** Codifying engineering knowledge directly shifted agent accuracy from an unoptimized baseline of 21% up to a consistent 95% rate by relying on identical models backed by better context.
+> 📊 **Anthropic Case Study:** Codifying engineering knowledge directly shifted agent accuracy from an unoptimized baseline of 21% up to a consistent 95% rate by relying on identical models backed by better context. [See their video](https://www.ginobaltazar.com/downloads/claude_for_data_engineering.mp4)
 
 ---
 
-## 🛠️ Staff-Level Data Engineering Sample Reference Blueprints
+## 🛠️ Staff-Level Data Engineering Sample Reference Guide
 
-This section contains an exmmple comprehensive file matrix required to stand up automated data contracts, shift-left pull request testing, and continuous [Amundsen](https://github.com/amundsen-io/amundsen) metadata graph integration. Please use this as a guide only!
+**WARNING** Please use this as a guide only!
 
-### 1. The Global Playbook: Root `CLAUDE.md` File
+This section contains an example comprehensive file matrix required to stand up automated data contracts, shift-left pull request testing, and continuous [Amundsen](https://github.com/amundsen-io/amundsen) metadata graph integration. 
+
+### 1. Global Playbook
+Root `CLAUDE.md` File
 ```json
 {
   "name": "staff-data-architecture-guardrails",
@@ -92,7 +95,8 @@ This section contains an exmmple comprehensive file matrix required to stand up 
 }
 ```
 
-### 2. The Automation Engine: `.github/workflows/data-contract-ci.yml`
+### 2. Automation Engine
+`.github/workflows/data-contract-ci.yml`
 ```yaml
 name: "Data Governance & Contract Verification CI"
 
@@ -138,7 +142,8 @@ jobs:
           datacontract test data_contracts/orders_contract.yaml --server snowflake
 ```
 
-### 3. The Structural Boundary: `data_contracts/orders_contract.yaml`
+### 3. The Structural Boundary
+`data_contracts/orders_contract.yaml`
 ```yaml
 dataContractSpecification: "2.5.0"
 id: "urn:datacontract:sales:orders"
@@ -171,7 +176,8 @@ servicelevels:
     period: "daily"
 ```
 
-### 4. The Lineage Connector: `databuilder/scripts/amundsen_snowflake_ingest.py`
+### 4. The Lineage Connector
+`databuilder/scripts/amundsen_snowflake_ingest.py`
 ```python
 import os
 import sys
