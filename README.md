@@ -42,7 +42,7 @@ Last updated: [August 12, 2026](https://github.com/ginobaltazar7/awesome-data-en
 - [dbt Agent Skills](https://github.com/dbt-labs/dbt-agent-skills) - curated collection of Agent Skills for dbt platform.
 - [Data Analytics and DE skills by borghei](https://github.com/borghei/Claude-Skills/blob/main/data-analytics/CLAUDE.md) Look under the data-analytics/ folder! Via [Amin Borghei](https://github.com/borghei)
 - [Data Pipeline Expert by Claude Skills](https://claudeskills.info/skills/rightnow-ai/openfang/data-pipeline/) - standalone production playbook hosted via the Claude Skills Hub directory.I like the focus on common engineering pitfalls—such as running full table scans when incremental loads are feasible, hardcoding credentials, or skipping vital post-ingestion freshness checks. This data-pipeline skill is one of many in the official agent playbook bundled with RightNow-AI/openfang, an open-source autonomous agent framework built in Rust that currently has over [18,000 stars on GitHub](https://github.com/rightnow-ai/openfang).
-
+- [Claude Forge](https://github.com/alirezarezvani/claudeforge) - automate creation and maintenance of CLAUDE.md files. Feels comprehensive!
 
 # Databases
 
