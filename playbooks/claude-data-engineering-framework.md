@@ -173,6 +173,8 @@ servicelevels:
 
 ### 4. The Lineage Connector: `databuilder/scripts/amundsen_snowflake_ingest.py`
 ```python
+import os
+import sys
 import logging
 from pyhocon import ConfigFactory
 from databuilder.job.job import DefaultJob
@@ -181,29 +183,67 @@ from databuilder.publisher.neo4j_publisher import Neo4jPublisher
 from databuilder.task.task import DefaultTask
 from databuilder.extractor.snowflake_metadata_extractor import SnowflakeMetadataExtractor
 
-def run_amundsen_ingestion():
-    config = ConfigFactory.from_dict({
-        'extractor.snowflake.account': 'company_account',
-        'extractor.snowflake.user': 'AMUNDSEN_SVC_USER',
-        'extractor.snowflake.password': 'env_secret_key',
-        'extractor.snowflake.warehouse': 'ANALYTICS_WH',
-        'loader.file_to_neo4j.dir_path': '/tmp/amundsen/snowflake_data',
-        'publisher.neo4j.node_files_directory': '/tmp/amundsen/snowflake_data/nodes',
-        'publisher.neo4j.relation_files_directory': '/tmp/amundsen/snowflake_data/relations',
-        'publisher.neo4j.uri': 'bolt://localhost:7687',
-        'publisher.neo4j.username': 'neo4j',
-        'publisher.neo4j.password': 'password'
-    })
+# Initialize secure structured logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
-    job = DefaultJob(
-        conf=config,
-        task=DefaultTask(extractor=SnowflakeMetadataExtractor(), loader=FileToNeo4jCSVLoader()),
-        publisher=Neo4jPublisher()
-    )
-    job.launch()
+def run_amundsen_ingestion():
+    """
+    Executes Snowflake metadata extraction and indexes lineage into Amundsen's graph.
+    Enforces Zero Trust boundaries by resolving all sensitive credentials from isolated environment variables at runtime.
+    """
+    logger.info("Initializing Zero-Trust Amundsen Ingestion Job...")
+
+    # Required environment variables for secure credential injection
+    required_env_vars = [
+        'SNOWFLAKE_ACCOUNT', 
+        'SNOWFLAKE_USER', 
+        'SNOWFLAKE_PASSWORD', 
+        'SNOWFLAKE_WAREHOUSE',
+        'NEO4J_URI',
+        'NEO4J_USER',
+        'NEO4J_PASSWORD'
+    ]
+
+    # Guardrail Check: Fail fast if secrets are missing from the execution context
+    missing_vars = [var for var in required_env_vars if not os.environ.get(var)]
+    if missing_vars:
+        logger.error(f"Security Policy Violation: Missing required environment variables: {missing_vars}")
+        sys.exit(1)
+
+    try:
+        # Build configuration using secure environment extractions
+        config = ConfigFactory.from_dict({
+            'extractor.snowflake.account': os.environ.get('SNOWFLAKE_ACCOUNT'),
+            'extractor.snowflake.user': os.environ.get('SNOWFLAKE_USER'),
+            'extractor.snowflake.password': os.environ.get('SNOWFLAKE_PASSWORD'),
+            'extractor.snowflake.warehouse': os.environ.get('SNOWFLAKE_WAREHOUSE'),
+            'loader.file_to_neo4j.dir_path': '/tmp/amundsen/snowflake_data',
+            'publisher.neo4j.node_files_directory': '/tmp/amundsen/snowflake_data/nodes',
+            'publisher.neo4j.relation_files_directory': '/tmp/amundsen/snowflake_data/relations',
+            'publisher.neo4j.uri': os.environ.get('NEO4J_URI'),
+            'publisher.neo4j.username': os.environ.get('NEO4J_USER'),
+            'publisher.neo4j.password': os.environ.get('NEO4J_PASSWORD')
+        })
+
+        # Orchestrate the data catalog task under explicit scopes
+        job = DefaultJob(
+            conf=config,
+            task=DefaultTask(extractor=SnowflakeMetadataExtractor(), loader=FileToNeo4jCSVLoader()),
+            publisher=Neo4jPublisher()
+        )
+        
+        logger.info("Launching metadata extraction task...")
+        job.launch()
+        logger.info("Metadata extraction and catalog publishing completed successfully.")
+
+    except Exception as e:
+        logger.critical(f"Pipeline Execution Failure: Metadata ingestion aborted due to error: {str(e)}")
+        sys.exit(1)
 
 if __name__ == '__main__':
     run_amundsen_ingestion()
+
 ```
 
 ---
