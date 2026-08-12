@@ -1,11 +1,12 @@
 # Awesome Data Engineering TIL [![Awesome](https://awesome.re/badge-flat2.svg)](https://github.com/sindresorhus/awesome)
 
-> A short curated list of awesome 'TIL-today-I-learned' resources related to Data Engineering. Last updated: [August 12, 2026](https://github.com/ginobaltazar7/awesome-data-engineering-til/commits/main/?since=2026-08-12).
+> A short curated list of awesome 'TIL-today-I-learned' resources related to Data Engineering. See this new video on [Claude Code for Data Engineering](https://www.ginobaltazar.com/downloads/claude_for_data_engineering.mp4) and ! Last updated: [August 12, 2026](https://github.com/ginobaltazar7/awesome-data-engineering-til/commits/main/?since=2026-08-12).
 
 Among these, I can vouch for and have experiences in [Kafka](https://kafka.apache.org/), [Thrift](https://thrift.apache.org/), [Ent](https://entgo.io/docs/getting-started), [MySql](https://www.mysql.com/), [Presto](https://prestodb.github.io/docs/current/index.html), [Spark](https://spark.apache.org/), [Postgres](https://www.postgresql.org/), [Mongo](https://www.mongodb.comhttps://www.mongodb.com), [Prometheus](https://github.com/prometheus/prometheus), [Grafana](https://github.com/grafana/grafana), [Elastic](https://www.elastic.co/) and last but not least, the humble [MS Excel](https://github.com/ginobaltazar7/66daysofdata?tab=readme-ov-file#excel) now supported by MS365 Copilot.
 
 ## Contents
 
+- [Playbooks](#playbooks)
 - [Databases](#databases)
 - [Data Comparison](#data-comparison)
 - [Data Ingestion](#data-ingestion)
@@ -32,6 +33,10 @@ Among these, I can vouch for and have experiences in [Kafka](https://kafka.apach
   - [Podcasts](#podcasts)
   - [Books](#books)
   - [Videos](#videos)
+
+### Playbooks
+- [Claude Code for Staff Data Architecture](../blob/main/playbooks/claude-data-engineering-framework.md) — Comprehensive design guide and baseline configurations implementing machine-readable **Data Contracts**, shift-left CI/CD validation, and automated **Amundsen** catalog tracking.
+
 
 # Databases
 
