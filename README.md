@@ -2,7 +2,7 @@
 
 > A short curated list of awesome 'TIL-today-I-learned' resources related to Data Engineering. See a new video on [Claude Code for Data Engineering](https://github.com/ginobaltazar7/awesome-data-engineering-til/tree/main#videos)! Among these, I can vouch for and have experiences in [Presto](https://prestodb.github.io/docs/current/index.html), [Spark](https://spark.apache.org/), [Postgres](https://www.postgresql.org/), [Mongo](https://www.mongodb.comhttps://www.mongodb.com), [Kafka](https://kafka.apache.org/), [Thrift](https://thrift.apache.org/), [Ent](https://entgo.io/docs/getting-started), [MySql](https://www.mysql.com/), [Prometheus](https://github.com/prometheus/prometheus), [Grafana](https://github.com/grafana/grafana), [Elastic](https://www.elastic.co/) and last but not least, the humble [MS Excel](https://github.com/ginobaltazar7/66daysofdata?tab=readme-ov-file#excel) now supported by MS365 Copilot.
 
-Last updated: [August 12, 2026](https://github.com/ginobaltazar7/awesome-data-engineering-til/commits/main/?since=2026-08-12).
+Last updated: [October 2026](https://github.com/ginobaltazar7/awesome-data-engineering-til/commits/main/?since=2026-10-01).
 
 ## Contents
 
@@ -45,6 +45,9 @@ Last updated: [August 12, 2026](https://github.com/ginobaltazar7/awesome-data-en
 - [Claude Skills for Engineering](https://github.com/alirezarezvani/claude-skills/tree/main/engineering-team) - automate creation and maintenance of CLAUDE.md files with Forge and Claude Skills for Engineering. Comprehensive with many other skills! Via [Ali Rezvani](https://github.com/alirezarezvani)
 
 # Databases
+
+- Joins
+  - [Dolt](https://github.com/dolthub/dolt) - Git for Data, and an interesting read using it for auditing [joins](https://www.dolthub.com/blog/2026-10-05-join-implication-reasoning/)
 
 - Relational
   - [RQLite](https://github.com/rqlite/rqlite) - distributed relational database built on SQLite.
